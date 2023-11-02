@@ -42,6 +42,9 @@
           "$ref": "#/components/requestBodies/aluno"
         },
         "responses": {
+          "200": {
+            "description": "Aluno cadastrado com sucesso."
+          },
           "405": {
             "description": "Entrada invalisda"
           }
@@ -219,7 +222,7 @@
       }
     },
     "requestBodies": {
-      "Pet": {
+      "aluno": {
         "description": "Pet object that needs to be added to the store",
         "content": {
           "application/json": {
