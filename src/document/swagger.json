@@ -39,7 +39,7 @@
         "summary": "Adicionar um novo aluno.",
         "operationId": "adicionar aluno",
         "requestBody": {
-          "$ref": "#/components/requestBodies/Pet"
+          "$ref": "#/components/requestBodies/aluno"
         },
         "responses": {
           "405": {
@@ -73,7 +73,7 @@
           }
         ],
         "requestBody": {
-          "$ref": "#/components/requestBodies/Pet"
+          "$ref": "#/components/requestBodies/aluno"
         },
         "responses": {
           "400": {
@@ -90,9 +90,9 @@
     "/aluno/detalhar/{id}'": {
       "get": {
         "tags": ["aluno"],
-        "summary": "Find pet by ID",
-        "description": "Returns a single pet",
-        "operationId": "getPetById",
+        "summary": "encontra aluno pelo id",
+        "description": "detalar aluno pelo id",
+        "operationId": "id",
         "parameters": [
           {
             "name": "id",
