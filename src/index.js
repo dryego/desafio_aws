@@ -9,9 +9,7 @@ const app = express();
 
 app.use(express.json());
 
-app.use("/", boasVindas);
-app.use("/doc", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
-
 app.use("/aluno", alunoRotas);
+app.use("/doc", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 app.listen(process.env.PORT, console.log("Servidor Inicializado..."));
