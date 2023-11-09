@@ -1,8 +1,5 @@
 const boasVindas = async (req, res) => {
-  res.json({
-    menssagem:
-      "Bem vindo a API do desafio de AWS da generation. Para a cessar a documentacao va para a rota: /doc ",
-  });
+  return res.redirect("https://api-desafio-aws-generation.cyclic.app/doc/");
 };
 
 module.exports = boasVindas;

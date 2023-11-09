@@ -9,6 +9,7 @@ const app = express();
 
 app.use(express.json());
 
+app.use("/", boasVindas);
 app.use("/aluno", alunoRotas);
 app.use("/doc", swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
